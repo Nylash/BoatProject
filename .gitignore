@@ -61,5 +61,16 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-BoatProjectUnity/Library/ShaderCache/*
-BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler
+BoatProjectUnity/Library/ShaderCache/
+
+BoatProjectUnity/Library/CurrentLayout-default.dwlt
+
+BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler.exe0.log
+
+BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler.exe1.log
+
+BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler.exe2.log
+
+BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler.exe3.log
+
+BoatProjectUnity/Library/shadercompiler-UnityShaderCompiler.exe4.log
