@@ -26,10 +26,12 @@ public class BoatController : MonoBehaviour
     bool pathSpawn;
 
     Rigidbody rigid;
+    CameraController camController;
 
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
+        camController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
     }
 
     void Update()
@@ -124,10 +126,11 @@ public class BoatController : MonoBehaviour
                     break;
                 case Encounter.EncounterType.islandLoad:
                     currentEncounter = Encounter.EncounterType.islandLoad;
-                    other.GetComponent<IslandLoadEncounter>().LoadIsland(-30, transform);
+                    other.GetComponent<IslandLoadEncounter>().LoadIsland(headingAngle, transform);
                     break;
                 case Encounter.EncounterType.island:
                     currentEncounter = Encounter.EncounterType.island;
+                    camController.FocusIsland(other.GetComponent<IslandEncounter>().GetTargetPos(), other.GetComponent<IslandEncounter>().targetRot);
                     break;
                 case Encounter.EncounterType.merchant:
                     break;
