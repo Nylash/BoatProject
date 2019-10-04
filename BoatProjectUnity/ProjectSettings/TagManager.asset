@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StartPath
   - RootIsland
+  - Exit
   layers:
   - Default
   - TransparentFX
